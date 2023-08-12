@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Health Report Form</title>
+<style>
+body {
+  font-family: Georgia;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  background-color: #282828;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<script src="javascipt.js"></script>
+<!--enctype="multipart/form-data-->
+<form action="health_report.php" method="post" >
+  <h1>Health Report Form</h1>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+  </div>
+  <div>
+    <label for="weight">Weight:</label>
+    <input type="number" name="weight" id="weight" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div>
+    <label for="health_report">Upload Health Report:</label>
+    <input type="file" name="health_report" id="health_report" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
